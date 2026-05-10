@@ -1,0 +1,8 @@
+# Ignorar el archivo de configuración con credenciales sensibles
+config.php
+
+# Ignorar todas las imágenes dentro de la carpeta imagenes/
+/imagenes/*
+
+# Excepción: Mantener el archivo .gitkeep para que git suba la carpeta vacía
+!/imagenes/.gitkeep

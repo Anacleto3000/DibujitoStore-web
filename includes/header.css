@@ -1,0 +1,190 @@
+/* ================= HEADER ================= */
+header {
+    border: 2px solid red;
+    background-color: rgb(232, 232, 232);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+header img {
+    
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+#buttons_header {
+    width: 100%;
+    border: 2px solid green;
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+
+#elementos_derecha{
+  width: 50%;
+  display: flex;  
+  border: 2px solid blue;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10%;
+}
+
+/* SEARCH BAR */
+#Barra_busqueda form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 400px;
+    background: var(--background-color);
+    border-radius: 30px;
+    padding: 5px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: box-shadow var(--transition-fast);
+}
+
+#Barra_busqueda form:focus-within {
+    box-shadow: 0 0 0 2px var(--accent-color);
+    border-color: var(--secondary-color);
+}
+
+#Barra_busqueda input {
+    width: 100%;
+    height: 35px;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    font-family: var(--font-body);
+    outline: none;
+    color: var(--text-main);
+}
+
+#Button_buscar {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Button_buscar img {
+    width: 20px;
+    height: 20px;
+    filter: invert(30%) sepia(10%) saturate(1400%) hue-rotate(85deg) brightness(95%) contrast(85%);
+}
+
+#Box_Button_Otros {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#Box_Button_Otros span {
+    color: var(--primary-color);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: color var(--transition-fast);
+    font-family: var(--font-heading);
+}
+
+#Box_Button_Otros span:hover {
+    color: var(--secondary-color);
+}
+
+/* SESSION TAGS */
+#Box_Button_Otros a {
+    border: 2px solid blue;
+    text-decoration: none;
+}
+
+#Box_Button_Otros a span[style*="background-color: white"] {
+    background-color: var(--secondary-color) !important;
+    color: var(--white) !important;
+    border-radius: 20px !important;
+    padding: 8px 16px !important;
+    box-shadow: var(--shadow-sm);
+}
+
+#container_button_login{
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* CART BUTTON */
+#Box_Button_carrito {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    background: var(--background-color);
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background var(--transition-fast);
+}
+
+#Box_Button_carrito:hover {
+    background: var(--accent-color);
+}
+
+#Box_Button_carrito img {
+    width: 24px;
+    height: 24px;
+    filter: invert(30%) sepia(10%) saturate(1400%) hue-rotate(85deg) brightness(95%) contrast(85%);
+}
+
+
+.container_header_opciones{
+    width: 100%;
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navegation_items{
+    width: 50%;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: flex-end;
+    gap: 70px;
+}
+
+#container_button_menu button { 
+    border: none; 
+    padding: 10px 20px; 
+    background: var(--secondary-color); 
+    color: white; 
+    font-weight: bold; 
+    border-radius:10px; 
+    cursor: pointer; 
+}
+
+#navegation_items span {
+    font-weight: bold;
+    cursor: pointer;
+    
+    transition: color var(--transition-fast);
+}
+
+#navegation_items span:hover {
+    color: var(--secondary-color);
+}

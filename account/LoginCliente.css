@@ -1,0 +1,202 @@
+:root {
+    /* Color Palette matched to Index */
+    --primary-color: #2F5233;
+    --secondary-color: #94C973;
+    --accent-color: #B1D8B7;
+    --background-color: #F8F9FA;
+    --surface-light: #FFFFFF;
+    --text-main: #333333;
+    --text-muted: #666666;
+    --white: #ffffff;
+
+    /* Typography */
+    --font-heading: "Krona One", sans-serif;
+    --font-body: "AR One Sans", sans-serif;
+
+    /* Effects */
+    --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 10px 20px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 15px 30px rgba(0, 0, 0, 0.12);
+    --transition-fast: 0.2s ease;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, var(--background-color) 0%, var(--accent-color) 100%);
+    font-family: var(--font-body);
+    color: var(--text-main);
+}
+
+p {
+    font-family: var(--font-body);
+    margin: 0;
+}
+
+#caja_principal {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#caja_secundaria {
+    background-color: var(--surface-light);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+#Titulo {
+    font-family: var(--font-heading);
+    font-size: 16px;
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+#Titulo h2 {
+    margin: 0;
+}
+
+#box_input_datos form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#box_input_datos input {
+    width: 100%;
+    height: 45px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: var(--radius-md);
+    padding: 0 15px;
+    font-family: var(--font-body);
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+#box_input_datos input:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(148, 201, 115, 0.2);
+}
+
+#Container_Button {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#Container_Button button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    height: 50px;
+    width: 100%;
+    border-radius: var(--radius-md);
+    font-family: var(--font-heading);
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+#Container_Button button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+#no_key {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#no_key p {
+    font-size: 13px;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color var(--transition-fast);
+}
+
+#no_key p:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+#caja_terciaria {
+    background-color: var(--surface-light);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+#ini_alternativa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#ini_alternativa p {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+#ini_alternativa img {
+    background-color: var(--background-color);
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+#ini_alternativa img:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    transform: scale(1.1);
+}
+
+#no_account {
+    font-size: 14px;
+    text-align: center;
+    color: var(--text-main);
+}
+
+#no_account a {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+#no_account a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    #caja_principal {
+        padding: 0 20px;
+    }
+}
