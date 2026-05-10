@@ -72,8 +72,10 @@ Sigue estos pasos para desplegar el proyecto en tu entorno local:
 
 ---
 
-*Desarrollado para Tienda Dibujito.*
+
 
 ## Consideraciones adicionales
 
    Este repositorio tiene relacion con otro llamado DibujitoStore-Admin, asi que si usted desea gestionar la pagina web deberá usar ambos repositorios. Por otro lado el diseño aun no es reponsive al 100%, por lo que no se recomienda su uso en dispositivos moviles.
+
+*Desarrollado para Tienda Dibujito.*
