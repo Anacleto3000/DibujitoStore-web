@@ -1,6 +1,11 @@
+
+
 # Tienda Dibujito 🎨
 
 ¡Bienvenido al repositorio de **Tienda Dibujito**! Este es un proyecto de comercio electrónico (E-commerce) desarrollado principalmente en PHP y MySQL, diseñado para ofrecer una experiencia de compra fluida y visualmente atractiva para los usuarios.
+
+#Descripcion 
+Este es mi primer proyecto iniciado el año 2025 del mes de diciembre
 
 ## 🚀 Características Principales
 
