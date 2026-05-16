@@ -4,8 +4,9 @@
 
 ¡Bienvenido al repositorio de **Tienda Dibujito**! Este es un proyecto de comercio electrónico (E-commerce) desarrollado principalmente en PHP y MySQL, diseñado para ofrecer una experiencia de compra fluida y visualmente atractiva para los usuarios.
 
-#Descripcion 
-Este es mi primer proyecto iniciado el año 2025 del mes de diciembre
+# Descripcion 
+Prooyecto iniciado al final del segundo ciclo
+Este es mi primer proyecto iniciado el año 2025 del mes de diciembre, inicio por cierto interes en como mysql se relacionaba con una pagina web ,es decir como la pagina web cargaba todos los datos desde una base de datos...
 
 ## 🚀 Características Principales
 
